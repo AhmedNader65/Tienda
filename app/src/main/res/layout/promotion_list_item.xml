@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/promo_item_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/promo_list_item_back"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        tools:ignore="ContentDescription"/>
+<TextView
+    android:id="@+id/product_text"
+    android:layout_margin="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="JEANS TROUSER"
+    android:rotation="-6"
+    android:layout_centerVertical="true"
+    android:layout_alignRight="@+id/promo_item_back"
+    android:layout_marginRight="20dp"
+    android:textColor="#e4062b"
+    android:textSize="20sp"
+    />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sale_ico_promo"
+        android:layout_alignLeft="@+id/promo_item_back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="ContentDescription"/>
+
+</RelativeLayout>

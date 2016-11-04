@@ -1,0 +1,12 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/body_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ListView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/promotion_list"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>

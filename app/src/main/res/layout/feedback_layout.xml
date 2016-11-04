@@ -1,0 +1,67 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:background="#f7f7f7"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/EditTextName"
+            android:layout_height="wrap_content"
+            android:hint="@string/feedback_name"
+            android:inputType="textPersonName"
+            android:background="#fff"
+            android:layout_marginBottom="20dp"
+            android:layout_width="fill_parent"/>
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="Choose feedback type"
+            android:layout_width="fill_parent"/>
+        <Spinner
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#fff"
+            android:id="@+id/SpinnerFeedbackType"
+            android:layout_height="wrap_content"
+            android:prompt="@string/type_feedback_message"
+            android:layout_width="fill_parent"
+            android:entries="@array/feedbacktypelist"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/EditTextFeedbackBody"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_feedback_message"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:paddingRight="10dp"
+            android:background="#fff"
+            android:layout_width="fill_parent"/>
+
+        <CheckBox
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/CheckBoxResponse"
+            android:layout_height="wrap_content"
+            android:text="@string/feedbackresponse"
+            android:layout_width="fill_parent"/>
+
+        <Button
+            android:id="@+id/ButtonSendFeedback"
+            android:layout_height="wrap_content"
+            android:text="@string/feedbackbutton"
+            android:layout_width="fill_parent"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="net.businessmonk.tienda.tienda">
+
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+
+                <action android:name="android.intent.tiendaOld"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".PromotionActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Balance"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".promotions_selected"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".History"
+            android:label="@string/title_activity_history"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".allBalance"
+            android:label="@string/title_activity_all_balance"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Contact"
+            android:label="@string/title_activity_contact"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <service android:name=".GPSTracker">
+        </service>
+
+        <activity
+            android:name=".Claim"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+        <activity android:name=".Goodluck"
+                  android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+    </application>
+
+</manifest>

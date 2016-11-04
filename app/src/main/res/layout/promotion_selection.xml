@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp"
+    >
+
+
+    <TextView
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:gravity="right"
+        android:background="@drawable/body_back"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/body"
+        android:layout_centerHorizontal="true"/>
+
+    <net.businessmonk.tienda.tienda.CircularImageView2
+        android:id="@+id/tip_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/balance_rect"
+        android:scaleType="fitXY"
+        android:layout_alignLeft="@+id/body"
+        android:layout_alignBottom="@+id/body"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/head_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:id="@+id/head"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

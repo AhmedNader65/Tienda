@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.businessmonk.tienda.tienda.PromotionActivity"
+    tools:showIn="@layout/activity_contact"
+    android:background="#b70b51"
+    android:layout_marginTop="60dp"
+              android:baselineAligned="false"
+              android:weightSum="4">
+
+    <fragment android:name="net.businessmonk.tienda.tienda.ContactHeadlinesFragment"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:id="@+id/headlines_fragment"
+              android:layout_weight="1"
+              tools:layout="@layout/headline_fragment" />
+
+    <fragment android:name="net.businessmonk.tienda.tienda.msgssFragment"
+        android:id="@+id/article_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        tools:layout="@layout/content_contact" />
+
+</LinearLayout>

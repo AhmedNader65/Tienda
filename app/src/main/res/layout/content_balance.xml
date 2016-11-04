@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="net.businessmonk.tienda.tienda.Balance"
+    tools:showIn="@layout/activity_balance">
+
+
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="27dp" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/coin2"
+            tools:ignore="ContentDescription"/>
+        <TextView
+            android:id="@+id/pointsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="455"
+            android:textSize="54sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pointsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="points"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gifts_seperator"
+        tools:ignore="ContentDescription"/>
+    <LinearLayout
+        android:id="@+id/gifts"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/promos_seperator"
+        tools:ignore="ContentDescription"/>
+    <LinearLayout
+        android:id="@+id/promos"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_gravity="center|bottom"
+        android:onClick="invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/invite"
+        tools:ignore="ContentDescription"/>
+</LinearLayout>

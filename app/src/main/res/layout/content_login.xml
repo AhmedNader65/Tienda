@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@mipmap/loginframe"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.businessmonk.tienda.tienda.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="140dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120sp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/usernameico"
+                tools:ignore="ContentDescription"/>
+
+            <EditText
+                android:singleLine="true"
+                android:text="om4rezz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="username"
+                android:textColorHint="#f3a098"
+                android:shadowColor="#ee4036"
+                android:textColorHighlight="#ee4036"
+                android:textColor="#ee4036"
+                android:id="@+id/editText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@mipmap/passwdico"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription"/>
+
+            <EditText
+                android:singleLine="true"
+                android:text="om4rezz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ee4036"
+                android:inputType="textPassword"
+                android:textColorHint="#f3a098"
+                android:hint="password"
+                android:ems="10"
+                android:id="@+id/editText2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="forget password"
+                android:textColor="#ee4036"
+                android:layout_marginTop="-5sp"
+                android:layout_marginRight="20sp"
+                android:gravity="right"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20sp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:onClick="go"
+                android:background="@null"
+                android:src="@mipmap/loginbutton"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="22sp"
+                android:textSize="15sp"
+                android:textColor="#ee4036"
+                android:layout_height="wrap_content"
+                android:text="sign up"
+                android:onClick="signUp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

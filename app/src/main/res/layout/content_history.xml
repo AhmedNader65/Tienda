@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/back_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_ico"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        tools:ignore="ContentDescription"/>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_history"
+    android:layout_marginTop="65dp"
+    android:id="@+id/history_list"
+    android:divider="#000"
+    android:dividerHeight="1.0sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</RelativeLayout>
